@@ -47,4 +47,15 @@ public class UserController {
         CommonResult result = CommonResult.success(CodeEnum.RESET_PASSWORD_SUCCESS,null);
         return ResultUtils.SUCCESS(result);
     }
+
+    @PostMapping("send-email")
+    public ResponseEntity<CommonResult> sendEmail(@RequestParam String email) {
+//        boolean success = userService.sendEmail(email);
+//        if (success) {
+//            return ResultUtils.SUCCESS(CommonResult.success(CodeEnum.EMAIL_SEND_SUCCESS, null));
+//        } else {
+//            return ResultUtils.ERROR(CommonResult.error(CodeEnum.EMAIL_SEND_FAILURE));
+//        }
+        return null;
+    }
 }
